@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>프로틴 캡짱 최저가</h1>
+        <nav>
+            <ul>
+                <li><a href="#product-list">상품목록</a></li>
+                <li><a href="#login">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Section -->
+    <section id="search" class="search">
+        <h2>검색</h2>
+        <input type="text" id="search-input" placeholder="Search products...">
+        <button onclick="searchProduct()">검색</button>
+        <div id="search-results"></div>
+    </section>
+
+    <!-- Product List Section -->
+    <section id="product-list" class="product-list">
+        <div class="product">
+            <img src="image.png" alt="Protein Product 1">
+            <div class="product-info">
+                <h2>김X국 프로틴</h2>
+                <p>먹으면 김X국처럼 쭉쭉빵빵 근육맨이 된다</p>
+                <button>구매</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="image2.png" alt="Protein Product 2">
+            <div class="product-info">
+                <h2>카세인 프로틴</h2>
+                <p>김주열이 복용중인 프로틴. 먹으면 김주열이 된다</p>
+                <button>구매</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="image.png3" alt="Protein Product 3">
+            <div class="product-info">
+                <h2>컴벳 프로틴</h2>
+                <p>단백질 섭취에 좋은 일반적인 프로틴</p>
+                <button>구매</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="login">
+        <h2>로그인</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
